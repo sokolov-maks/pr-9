@@ -1,0 +1,15 @@
+---
+- name: play-5
+  hosts: all
+
+  tasks:
+
+  - name: copy file project
+    copy:
+      src: ~/Project/project.txt
+      dest: ~/Project18
+
+  - name: copy file ansible
+    copy:
+      src: ~/Project/ansible.txt
+      dest: ~/Ansible18

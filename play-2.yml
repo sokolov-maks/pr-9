@@ -1,0 +1,14 @@
+---
+- name: play-2
+  hosts: all
+  become: yes
+
+  tasks:
+
+  - name: update
+    apt:
+      update_cache: yes
+
+  - name: upgrade
+    apt:
+      upgrade: yes

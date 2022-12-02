@@ -1,0 +1,10 @@
+---
+- name: play-8
+  hosts: all
+  become: yes
+
+  tasks:
+    - copy:
+       src: ~/Project/index.html
+       dest: /var/www/html/
+#       remote_src: yes

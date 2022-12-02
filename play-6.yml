@@ -1,0 +1,20 @@
+---
+- name: play-6
+  hosts: all
+  become: yes
+  tasks:
+
+  - name: istall cowsay
+    apt:
+      name: "cowsay"
+      state: present
+
+  - name: istall cmatrix
+    apt:
+      name: "cmatrix"
+      state: present
+
+  - name: istall mc
+    apt:
+      name: "mc"
+      state: present
